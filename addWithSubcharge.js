@@ -2,24 +2,22 @@
 // For each amount greater than 10, the subcharge is 2.
 
 function addWithSubcharge(amount1, amount2){
-    if(amount1 <= 10 ){
-            amount1 = 1;
-      }else {
-        amount1 = 2;
-        }
-
-   if (amount2 <= 10){
-            amount2 = 1;
-        }else{
-            amount2 = 2;
-        }    
-    var sum = (amount1 + amount2)
+    let sum = amount1 + amount2;
+    if( sum <= 10){
+     let subcharge = 1; 
+     sum += subcharge;    
+    }else{
+        let subcharge = 2;
+        sum += subcharge;
+    }
     console.log(sum)
     return(sum)
    
 }    
    
-addWithSubcharge(17,17)
+addWithSubcharge(4,4);
+addWithSubcharge(4,10);
+addWithSubcharge(10,10);
     
 
     
