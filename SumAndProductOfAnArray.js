@@ -4,9 +4,9 @@ function SumOfIntegers(array){
         sum = 0;
         product = 1;
         
-    for(var i = 0 ; i < array.length  ; i++){
+    for(var i = 0 ; i < array.length ; i++){
       sum += array[i] 
-      product*= array[i]
+      product *= array[i]
   
     }
     // return sum;
